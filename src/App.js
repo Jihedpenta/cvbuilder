@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import { createTheme, CssBaseline, ThemeProvider, responsiveFontSizes } from '@mui/material';
 import './App.css';
+import CvBuild from './pages/cvbuilding/cvbuild.component';
+import Pentabell from './fonts/Pentabell-Regular.ttf';
 
 function App() {
+  let theme = createTheme({
+    typography: {
+      fontFamily: 'Pentabell',
+    },
+    components: {
+      MuiCssBaseline: {
+        styleOverrides: `
+          @font-face {
+            font-family: 'Pentabell';
+            src: local('Pentabell'), url(${Pentabell});
+          }
+        `,
+      },
+    },
+  });
+  theme = responsiveFontSizes(theme);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <CvBuild />
+    </ThemeProvider>
+
   );
 }
 
