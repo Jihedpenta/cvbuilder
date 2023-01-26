@@ -14,7 +14,7 @@ import ResumeTopPage from '../resume-sections/resume-top-page/resume-top-page.co
 import ResumePageContainer from './resume-page-container/resume-page-container.component';
 
 
-const ResumePage = ({ content, industry, pentaContact, index, }) => {
+const ResumePage = ({ content, industry, pentaContact, index, someprops }) => {
     const { containerRef, headerRef, topPageRef, summaryRef, educationRef, certifRef, workExpRef, projectRef, skillRef, toolRef, langRef } = useInitilizeRefs()
     const primaryColor = getColor(industry)
     const logo_link = getLogoUrl(industry);
