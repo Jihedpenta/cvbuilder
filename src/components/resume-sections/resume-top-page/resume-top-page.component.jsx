@@ -23,8 +23,7 @@ const ResumeTopPage = ({ primaryColor, logo_link, setTopPageHeight, innerRef }) 
                     src={logo_link}
                     alt='Pentabell Logo'
                     width='40'
-                    loading="lazy"
-
+                    loading='lazy'
                 />
             </Box>
             <ResumeDevider color={primaryColor} doubleBmargin />

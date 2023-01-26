@@ -59,6 +59,16 @@ export const PAGES_CONTENT = {
                         date: 'Jun 2017',
                         title: 'Formation SAP',
                         subtitle: 'SCM630 (module WM) et SCM660 (module HUM).'
+                    },
+                    {
+                        date: 'Jun 2015',
+                        title: 'Formation SAP',
+                        subtitle: 'AC040 (module CO).'
+                    },
+                    {
+                        date: 'Jun 2017',
+                        title: 'Formation SAP',
+                        subtitle: 'SCM630 (module WM) et SCM660 (module HUM).'
                     }
                 ]
             },

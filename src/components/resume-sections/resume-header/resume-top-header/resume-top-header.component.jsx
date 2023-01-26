@@ -14,7 +14,7 @@ const ResumeTopHeader = ({ headerData, primaryColor, logo_link }) => {
                             src={headerData.image_url}
                             alt={headerData.full_name}
                             width='100'
-                            loading="lazy"
+                            // loading="lazy"
 
                         />
                     </Box>

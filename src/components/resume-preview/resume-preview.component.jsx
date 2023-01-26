@@ -14,6 +14,7 @@ const ResumePreview = () => {
   useEffect(() => {
     // console.log(PAGES_CONTENT.pages.length)
     setPagesContent(PAGES_CONTENT.pages)
+ 
   }, [])
 
 
@@ -29,10 +30,10 @@ const ResumePreview = () => {
       }}
     >
       {
-        pagesContent.map((elem, index) => {
+        pagesContent.map((elem, index) => {        
           return (
-            <ResumePage key={index} industry={PAGES_CONTENT.industry} pentaContact={PAGES_CONTENT.penta_contact}  lang={PAGES_CONTENT.lang} content={elem} />
-            )
+            <ResumePage key={index} industry={PAGES_CONTENT.industry} pentaContact={PAGES_CONTENT.penta_contact} lang={PAGES_CONTENT.lang} content={elem} index={index}/>
+          )
 
         })
       }
